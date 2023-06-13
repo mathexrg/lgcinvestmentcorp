@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      function descargarImagen() {
+        var enlace = document.createElement('a');
+        enlace.href = 'https://raw.githubusercontent.com/mathexrg/lgcinvestmentcorp/main/LGC%20Contact.jpeg';
+        enlace.download = 'LGC Contact.jpeg';
+        enlace.style.display = 'none';
+        document.body.appendChild(enlace);
+        enlace.click();
+        document.body.removeChild(enlace);
+      }
+    </script>
+
+    <p>Haz clic en el botón para descargar la imagen:</p>
+    <button onclick="descargarImagen()">Descargar imagen</button>
+  </body>
+</html>
